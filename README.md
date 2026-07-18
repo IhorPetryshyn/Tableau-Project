@@ -1,6 +1,5 @@
-## 🗄️ Підготовка даних (SQL)
+## 🗄️ Data Preparation (SQL)
 
-Для розрахунку основних метрик ефективності розсилок та підготовки фінального набору даних для Tableau, був використаний наступний SQL-запит:
 ```sql
 with union_data as(
     SELECT
@@ -49,17 +48,18 @@ group by date, country
 ```
 # Email Metrics Dashboard
 
-Інтерактивний дашборд для аналізу ефективності email-маркетингу (Open Rate, Click Rate, CTOR) за 2020-2021 роки.
+An interactive dashboard designed to analyze email marketing effectiveness (Open Rate, Click Rate, CTOR).
 
-## 📊 Інтерактивна версія
-Ви можете переглянути та потестувати дашборд безпосередньо на Tableau Public:
-👉 [Переглянути Email Metrics на Tableau Public](https://public.tableau.com/app/profile/ihor.petrsyhyn/viz/EmailMetrics_17785785471980/EmailMetrics?publish=yes)
+## 📊 Interactive Version
+You can view and interact with the dashboard directly on Tableau Public:
+* 👉 [View Email Metrics on Tableau Public](https://public.tableau.com/app/profile/ihor.petrsyhyn/viz/EmailMetrics_17785785471980/EmailMetrics?publish=yes)
 
 ## 📷 Скріншот дашборду
-![Email Metrics Dashboard](https://drive.google.com/file/d/1N30786BoDE0roK5wxyVZjLSfE5rHuL-5/view?usp=sharing)
+<img width="1199" height="1199" alt="Tableau Project" src="https://github.com/user-attachments/assets/6f2641fe-5162-43dd-8288-99786aa988c6" />
 
-## 🛠️ Опис метрик та функціоналу
-* **Open Rate:** Відсоток відкритих листів (~35.49%).
-* **Click Rate:** Відсоток кліків (~3.85%).
-* **CTOR (Click-to-Open Rate):** Співвідношення кліків до відкриттів (~10.86%).
-* **Фільтрація:** Можливість фільтрувати дані за країнами (Country) та часовим періодом (Date/Year).
+
+## 🛠️ Metrics & Functionality Overview
+* **Open Rate:** The percentage of sent emails that were opened (~35.49%).
+* **Click Rate:** The percentage of links clicked out of total sent emails (~3.85%).
+* **CTOR (Click-to-Open Rate):** The ratio of clicks to unique opens, measuring content relevance (~10.86%).
+* **Data Filtering:** Dynamic filtering options by **Country** and time periods (**Date/Year**).
