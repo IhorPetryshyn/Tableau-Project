@@ -1,3 +1,6 @@
+## 🗄️ Підготовка даних (SQL)
+
+Для розрахунку основних метрик ефективності розсилок та підготовки фінального набору даних для Tableau, був використаний наступний SQL-запит:
 ```sql
 with union_data as(
     SELECT
@@ -44,3 +47,19 @@ SELECT
 from union_data
 group by date, country
 ```
+# Email Metrics Dashboard
+
+Інтерактивний дашборд для аналізу ефективності email-маркетингу (Open Rate, Click Rate, CTOR) за 2020-2021 роки.
+
+## 📊 Інтерактивна версія
+Ви можете переглянути та потестувати дашборд безпосередньо на Tableau Public:
+👉 [Переглянути Email Metrics на Tableau Public](https://public.tableau.com/app/profile/ihor.petrsyhyn/viz/EmailMetrics_17785785471980/EmailMetrics?publish=yes)
+
+## 📷 Скріншот дашборду
+![Email Metrics Dashboard](https://drive.google.com/file/d/1N30786BoDE0roK5wxyVZjLSfE5rHuL-5/view?usp=sharing)
+
+## 🛠️ Опис метрик та функціоналу
+* **Open Rate:** Відсоток відкритих листів (~35.49%).
+* **Click Rate:** Відсоток кліків (~3.85%).
+* **CTOR (Click-to-Open Rate):** Співвідношення кліків до відкриттів (~10.86%).
+* **Фільтрація:** Можливість фільтрувати дані за країнами (Country) та часовим періодом (Date/Year).
